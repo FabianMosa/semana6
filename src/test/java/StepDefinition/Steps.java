@@ -31,15 +31,11 @@ public class Steps {
 		driver.findElement(By.id("password")).sendKeys(string2);
 	}
 
-	@Then("limpiar campos")
-	public void limpiarCampos() {
-		System.out.println("En este paso limpia los datos ingresados");
-		driver.findElement(By.id("loginbtn")).clear();;
-	}
+
 	@Then("inicia sesion")
 	public void inicia_sesion() {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("En este paso inicia sesion con los datos ingresados desde nuestro archivo Mytest.feature");
-		driver.findElement(By.id("loginbtn")).click();
+		driver.findElement(By.id("Ingresar")).click();
 	}
 }
